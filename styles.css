@@ -139,14 +139,15 @@ a:hover{
 section{
     padding-top: 4vh;
     height:90vh;
-    margin:0.10rem;
+    margin:0,10rem;
     box-sizing:border-box;
     min-height: fit-content;
 } 
 
-#profile,.section-text-p1{
+#profile,.section-container{
     display:flex;
 }
+/*profile section*/
 #profile{
     justify-content: center;
     gap:5rem;
@@ -155,22 +156,45 @@ section{
 .social-container.img{
     height: 10px;
 }
-#social-container {
+.section-pic-container{
     display: flex;           /* Enables Flexbox layout */
-    justify-content: left; /* Moves the icon to the horizontal center */
-    align-items: flex-start;   /* Moves the icon to the bottom of the container */
-    height: 100px;           /* Set a specific height so you can see it move to the bottom */
-    padding-bottom: 20px;    /* Optional: adds a little space from the very bottom edge */
-    border: 1px solid transparent; /* Keeps the box structure stable */
+    height:400px;
+    width:400px;
+    margin:auto 0;
+}
+
+.section-text{
+    align-self: center;
+    text-align: center;
+}
+
+.section-text-p1{
+    text-align:center;
+}
+.section-text-p2{
+    font-size:1.75rem;
+    margin-bottom: 1rem;
+}
+.title{
+    font-size: 3rem;
+    text-align: center;
+}
+#social-container{
+    display:flex;
+    justify-content: center;
+    gap:1rem;
+    margin-top:2rem;
 }
 
 /* The Icon: This controls the size */
 .icon {
     width: 32px;             /* Industry standard for small social icons */
-    height: auto;            /* Keeps the image from looking stretched */
+    height: 2rem;            /* Keeps the image from looking stretched */
     cursor: pointer;         /* Shows the hand icon when hovering */
     transition: transform 0.2s ease; /* Makes the hover effect smooth */
 }
+
+
 
 /* Hover Effect: Professional touch */
 .icon:hover {
@@ -187,10 +211,47 @@ section{
 
 .btn-container {
     display: flex;
-    justify-content: left; /* Centers the button horizontally */
+    justify-content: center; /* Centers the button horizontally */
     gap: 1rem;
 }
 
+.btn{
+    font-weight:600;
+    transition: all 300ms ease;
+    padding:1rem;
+    width:8rem;
+    border-radius: 2rem; 
+    text-align: center;
+}
+
+.btn-color-1,
+.btn-color-2 {
+    border: rgb(53, 53, 53) solid 0.1rem;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+    cursor: pointer;
+}
+
+.btn-color-1
+.btn-color-2:hover{
+    background-color: rgb(53, 53, 53);
+}
+.btn-color-1:hover{
+    background: rgb(0,0,0);
+}
+.btn-color-2{
+    background:none;
+}
+
+.btn-color-2:hover{
+    border:rgb(255,255,255)0.1rem solid;
+}
+
+.btn-container{
+    gap:1rem;
+}
 /* Specific Style for Color-1 (Professional Black/White look) */
 .btn-color-1 {
     border: rgb(53, 53, 53) solid 0.1rem;
@@ -203,5 +264,143 @@ section{
     color: white;
 }
 
+/*about secton*/
+#about{
+    position:relative;
+}
+.about-container{
+    gap:2rem;
+    padding:2rem;
+    margin-top:2rem;
+    margin-bottom:2rem;
+}
+.about-detail-container{
+    justify-content: center;
+    flex-direction: column;
+}
+.about-container,.about-detail-container{
+    display: flex;
 
+}
 
+.about-pic{
+    border-radius: 2rem;
+}
+.Icon-Arrow {
+    position: absolute;
+    right: 2rem;      /* Distance from the right edge */
+    bottom: 2rem;     /* Distance from the bottom edge */
+    height: 2rem;     /* Makes the icon smaller (approx 32px) */
+    transition: all 0.3s ease;
+}
+.detail-container{
+    padding:1.5rem;
+    flex:1;
+    background:white;
+    border-radius: 2rem;
+    border:rgb(53,53,53);
+    text-align: center;
+}
+.section-container{
+    gap:4rem;
+    height:80%;
+}
+.section-pic-container{
+    height:400px;
+    width:400px;
+    margin:auto 0;
+}
+
+#experience{
+    position:relative;
+}
+.experience-sub-title{
+    color:rgb(85,85,85);
+    font-weight:600;
+    font-size:1.7rem;
+    margin-bottom: 2rem;
+}
+.experience-detail-container{
+    display: flex;
+    justify-content:space-around;
+    gap:2rem;
+    flex-direction: row;
+}
+.article-container{
+    display:flex;
+    text-align:initial;
+    flex-wrap:wrap;
+    flex-direction: row;
+}
+article{
+    display:flex;
+    width:10rem;
+    justify-content: space-around;
+    gap:0.5rem;
+}
+article.icon{
+    cursor:default;
+}
+
+#projects{
+    position: relative;
+}
+.color-container{
+background-color: rgb(163,163,163);
+background: rgb(250,250,250);
+}
+.project-img{
+    border-radius: 2rem;
+    width:90%;
+    height:90%;
+}
+.project-title{
+    margin:1rem;
+    color:black;
+}
+.project-btn{
+    color:black;
+    border-color: rgb(163,163,163);
+}
+#contact{
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    height:80vh;   
+}
+.contact-info-upper-container{
+    display:flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border:rgb(53,53,53) solid 0.1rem;
+    border-color: rgb(163,163,163);
+    background: rgb(250,250,250);
+    margin:2rem auto;
+    padding:0.5rem;
+}
+.contact-info-container{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    padding:1rem;
+    margin:1rem;
+}
+.contact-info-container p{
+    font-size: larger;
+}
+.contact-icon{
+cursor:default;
+}
+#email-icon{
+    height:2.5rem;
+}
+
+footer{
+    height:26vh;
+    margin:0.1rem;
+}
+footer p{
+    text-align: center;
+   
+}

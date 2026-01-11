@@ -1,4 +1,19 @@
-@media screen and ( max-width:1000px)
+/*@media screen and ( max-width:1400px)
+{
+    #profile{
+  height:83vh;
+  margin-bottom:6rem;
+    }
+.about-container{
+    flex-wrap:wrap;
+
+    }   
+}
+    
+
+
+
+@media screen and ( max-width:1200px)
 {
     #desktop_nav{
         display: none;
@@ -6,4 +21,140 @@
     #hamburger-nav{
         display:flex;
     }
+
+    #exeperience,.exeperience-detail-container{
+       margin-top:2rem;      
+    }
+
+    .arrow{
+        display:none;
+    }
+    section,
+    .section-container{
+       height:fit-content;
+    }
+    section{
+        margin:0.5%;
+    }
+    .section-pic-container{
+        height:275px;
+        width:275px;
+        margin:0 auto 2rem;
+    }
+    .about-container{
+        margin-top:0;
+    }
+
+}*/
+@media screen and (max-width: 1400px) {
+  #profile {
+    height: 83vh;
+    gap: 3rem;
+  }
+
+  .section-container {
+    gap: 3rem;
+  }
+
+  .experience-detail-container {
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  /* Navbar */
+  #desktop_nav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+  }
+
+  /* Profile */
+  #profile {
+    flex-direction: column;
+    height: auto;
+    gap: 2rem;
+  }
+.section-pic-container{
+    height:300px;
+    width:300px;
+}
+.section-text{
+    margin:2rem;;
+}
+  .section-pic-container img {
+    width: 300px;
+    height: 300px;
+    margin:1rem;
+  }
+
+  /* About */
+  .section-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .about-container {
+    flex-direction: column;
+  }
+
+  /* Experience */
+  .experience-detail-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Projects */
+  .experience-detail-container {
+    flex-wrap: wrap;
+  }
+}
+ 
+@media screen and (max-width: 600px) {
+  section {
+    padding: 2rem 1rem;
+    height: auto;
+  }
+
+  .logo {
+    font-size: 1.6rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .section-text-p2 {
+    font-size: 1.2rem;
+  }
+
+  .section-pic-container {
+    width: 250px;
+    height: 250px;
+  }
+
+  .btn-container {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  /* Experience cards */
+  article {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  /* Contact */
+  .contact-info-upper-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  footer {
+    height: auto;
+  }
 }
