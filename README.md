@@ -21,7 +21,7 @@ A simple personal portfolio website built to showcase skills, projects, and expe
 ## 🌐 Live Demo
 
 Hosted using Netlify.
-
+https://myy-demo-portfolio.netlify.app/
 
 
 ## 👨‍💻 Author
